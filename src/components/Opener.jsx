@@ -15,18 +15,18 @@ const Opener = () => {
         !isOpen ? "hidden" : ""
       } fixed  w-full  bg-transparent z-50 `}
     >
-      <div className=" absolute backdrop-blur-sm bg-n-8/70 z-10 flex items-center justify-center top-[12rem] left-[2rem] h-[20rem] w-[25rem]  md:left-[20rem] md:top-[10rem] md:w-[50vw] md:h-[30vw] rounded-xl border border-n-4/20 p-4">
+      <div className=" absolute backdrop-blur-sm bg-n-8/70 z-10 flex items-center justify-center top-[12rem] w-full  mx-auto h-[21rem]  md:left-[20rem] md:top-[10rem] md:w-[50vw] md:h-[30vw] rounded-xl border border-n-4/20 p-4">
         <div className=" w-[100%] h-[100%] flex flex-col ">
-          <h1 className="h1 text-center mt-[2.5rem] md:mt-[4rem] ">
+          <h1 className="h1 text-center mt-[3rem] md:mt-[4rem] ">
             Follow Me 👇
           </h1>
           <span
             onClick={handleClick}
-            className=" absolute right-3 w-[2.8rem] h-[2.8rem] md:w-[3.4rem] md:h-[3.4rem]  rounded-full md:top-[1rem] md:right-[1rem] flex items-center justify-center cursor-pointer "
+            className=" absolute right-[0.6rem] w-[2.8rem] h-[2.8rem] md:w-[3.4rem] top-[0.5rem] md:h-[3.4rem]  rounded-full md:top-[1rem] md:right-[1rem] flex items-center justify-center cursor-pointer "
           >
-            <MdCancel size={40} />
+            <MdCancel size={30} />
           </span>
-          <div className=" mt-[3.5rem] md:mt-[5rem] mx-auto gap-[10rem] flex  ">
+          <div className=" mt-[3.5rem] md:mt-[5rem] mx-auto gap-[5rem] lg:gap-[10rem]  flex  ">
             <a
               target="_blank"
               href="https://twitter.com/Priyanshu_k0/"

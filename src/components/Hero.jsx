@@ -39,7 +39,7 @@ function Hero() {
             Unlesh the power of AI within Brainwave Upgrade your productivity
             with Brainwave, the open AI chat app.
           </p>
-          <Button className="" href="/pricing" white>
+          <Button className="" href="/" white>
             Get Started
           </Button>
         </div>
