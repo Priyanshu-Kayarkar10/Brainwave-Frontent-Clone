@@ -1,0 +1,35 @@
+import { useEffect, useState } from "react";
+
+import ButtonGradient from "./assets/svg/ButtonGradient";
+import Benefits from "./components/Benefits";
+import Collaboration from "./components/Collaboration";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Pricing from "./components/Pricing";
+import Roadmap from "./components/Roadmap";
+import Services from "./components/Services";
+import Opener from "./components/Opener";
+
+const App = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  return (
+    <>
+      {isOpen ? <Opener /> : ""}
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden  ">
+        <Header />
+        <Hero />
+        <Benefits />
+        <Collaboration />
+        <Services />
+      </div>
+      <ButtonGradient />
+      <Pricing />
+      <Roadmap />
+      <Footer />
+    </>
+  );
+};
+
+export default App;
