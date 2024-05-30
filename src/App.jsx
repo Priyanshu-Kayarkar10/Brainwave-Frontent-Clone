@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
@@ -12,18 +10,14 @@ import Services from "./components/Services";
 import Opener from "./components/Opener";
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <>
-      {isOpen ? <Opener /> : ""}
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden  ">
         <Header />
         <Hero />
         <Benefits />
         <Collaboration />
         <Services />
-      </div>
       <ButtonGradient />
       <Pricing />
       <Roadmap />
